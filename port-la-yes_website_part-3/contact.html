@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us | Port La Yes</title>
+    <meta name="description"
+        content="Explore the Port La Yes contact page for contact details, location information and general enquiries about the beauty brand.">
+    <meta name="keywords"
+        content="Call us, need help, contact details, location, store, Port La Yes contact, Beauty enquiries, Beauty and skincare, Port La Yes contact details, Beauty brand information">
+    <meta name="robots" content="index, follow">
+    <link href="_css/style.css" rel="stylesheet" type="text/css" />
+    <link href="_css/javascriptfile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--The header contains the logo and the top-level navigation menu-->
+    <header>
+        <div class="logo-box">
+            <img class="logo" src="_images/port-la-yes_logo.png" alt="Port La Yes beauty brand logo">
+        </div>
+        <div class="nav-box">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="shop.html">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html"><strong>Contact</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <!--The main content section, such as the contact information and feedback form-->
+            <div class="contact-box">
+                <h1>Contact Us</h1>
+                <h2>Contact Details</h2>
+                <p>Phone: +27 77 063 4562</p>
+                <p>Phone: +27 62 577 4586</p>
+                <p>Email: info@portlayes.com</p>
+            </div>
+            <div class="form-box">
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSd_eRExgP2b5W99LKvIP2_s-qTDU5VYiDL-QFHUr2LJbAdQ-w/formResponse"
+                    method="POST" target="ContactForm" onsubmit="return validateForm()" novalidate>
+
+                    <table>
+                        <tr>
+                            <td><label for="MyFullname">Fullname:</label></td>
+                            <td><input type="text" id="MyFullname" name="entry.1385229246" placeholder="Your Full Name"
+                                    required><small id="nameError"></small></td>
+                        </tr>
+                        <tr>
+                            <td><label for="MyPhone">Phone:</label></td>
+                            <td><input type="tel" id="MyPhone" name="entry.1156663288" placeholder="012 345 6789"
+                                    required><small id="phoneError"></small></td>
+                        </tr>
+                        <tr>
+                            <td><label for="TheReason">Reason for Contact:</label></td>
+                            <td>
+                                <input type="radio" id="TheReason" name="entry.1112191253" value="General Inquiry"
+                                    required>General Inquiry<br>
+                                <input type="radio" id="TheReason" name="entry.1112191253" value="Compliment"
+                                    required>Compliment<br>
+                                <input type="radio" id="TheReason" name="entry.1112191253" value="Compliant"
+                                    required>Compliant<br>
+                                <input type="radio" id="TheReason" name="entry.1112191253" value="Suggestion"
+                                    required>Suggestion<br>
+                                <input type="radio" id="TheReason" name="entry.1112191253" value="Other"
+                                    required>Other<br>
+                                <small id="contactError"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="MyMessage">Message:</label></td>
+                            <td><textarea id="MyMessage" name="entry.1052198737" placeholder="Your Message"
+                                    required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="reset" value="Reset">
+                                <input type="submit" value="Submit">
+                            </td>
+                    </table>
+                </form>
+                <iframe name="ContactForm" id="ContactForm" style="display:none;"></iframe>
+            </div>
+            <div class="location-box">
+                <!--The main content section, such as the location information and map-->
+                <h2>Location</h2>
+                <h2>Visit Our Store</h2>
+                <p>114 Grayston Drive Johannesburg, South Africa</p>
+                <p>Hours: Monday to Saturday, 9am - 6pm</p>
+                <p>Visit our physical store to see all our products in person, receive personalized advice, and shop
+                    with confidence.</p>
+            </div>
+            <div class="map-box">
+                <h2>Map</h2>
+                <!--An embedded Google Maps iframe that shows the location of the store-->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3582.987742503326!2d28.0599403!3d-26.0993188!3m2!1i1024!2i768!4f13.1!2m1!1semeris%20sandton%20address!5e0!3m2!1sen!2sza!4v1786543829555!5m2!1sen!2sza"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+
+        <div id="thankYouPopup" class="popup-overlay">
+            <div class="popup-box">
+                <h1>THANK YOU!</h1>
+                <p>Your message has been submitted successfully.</p>
+                <p>We appreciate you choosing Port' La Yes!</p>
+                <button type="button" id="closePopup">Whatever!</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!--The footer contains the copyright information and a link to the top of the page-->
+        <nav class="lownav-links">
+            <ul>
+                <li><a href="contact.html">Back To Top</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write(" - Port La Yes | Last modified: ")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br>all rights reserved.
+        </p>
+    </footer>
+    <script>
+        var formSubmitted = false;
+
+        // Function to display an error message
+        function displayError(errorId, message) {
+            document.getElementById(errorId).textContent = message;
+        }
+
+        // Function to clear an error message
+        function clearError(errorId) {
+            document.getElementById(errorId).textContent = "";
+        }
+
+        // Function to validate the enquiry form
+        function validateForm() {
+            var valid = true;
+
+            // Validate full name
+            var name = document.getElementById("MyFullname").value.trim();
+            var namePattern = /^[a-zA-Z\s]+$/;
+
+            if (name === "" || name.length < 5 || name.length > 41) {
+                displayError("nameError", "Please enter your full name (5–41 characters).");
+                valid = false;
+            } else if (!namePattern.test(name)) {
+                displayError("nameError", "Please use letters and spaces only.");
+                valid = false;
+            } else {
+                clearError("nameError");
+            }
+
+            // Validate phone number
+            var phone = document.getElementById("MyPhone").value.trim();
+            var phonePattern = /^\d{3} \d{3} \d{4}$/;
+
+            if (!phonePattern.test(phone)) {
+                displayError("phoneError", "Use this format: 012 345 6789.");
+                valid = false;
+            } else {
+                clearError("phoneError");
+            }
+
+            // Validate reason for for contact
+            var reason = document.querySelector('input[name="entry.1112191253"]:checked');
+
+            if (!reason) {
+                displayError("contactError", "Please select a reason for contacting us.");
+                valid = false;
+            }
+
+            // Validate message
+            var message = document.getElementById("MyMessage").value.trim();
+
+            if (message === "" || message.length < 10 || message.length > 401 ||
+                !/^[a-zA-Z0-9\s.,!?'"-]+$/.test(message)) {
+                alert("Please enter a message between 10 and 401 characters.\n\nUse letters, numbers, and basic punctuation only.");
+                valid = false;
+            }
+
+            if (valid) {
+                formSubmitted = true;
+            }
+
+            return valid;
+        }
+
+        document.getElementById("ContactForm").addEventListener("load", function () {
+            if (formSubmitted) {
+                // Clear the form after submission
+                document.querySelector("form").reset();
+
+                // Clear any remaining validation messages
+                clearError("nameError");
+                clearError("phoneError");
+                clearError("contactError");
+
+                // Show the Thank You pop-up
+                document.getElementById("thankYouPopup").style.display = "flex";
+
+                formSubmitted = false;
+            }
+        });
+
+        // Close the Thank You pop-up
+        document.getElementById("closePopup").addEventListener("click", function () {
+            document.getElementById("thankYouPopup").style.display = "none";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Port La Yes</title>
+    <meta name="description" content="Discover Port la yes beauty products. Confidence starts with you. Trust me it will always start with. New small business in town it is a plesure to serve yall my lovely beings.">
+    <meta name="keywords" content="Port La Yes, Beauty products, Beauty and skincare, Beauty brand">
+    <meta name="robots" content="index, follow">
+    <link href="_css/style.css" rel="stylesheet" type="text/css" />
+    <link href="_css/javascriptfile.css" rel="stylesheet" type="text/css" />
+    <script src="_js/jquery-1.10.2.min.js"></script>
+    <script src="_js/lightbox-2.6.min.js"></script>
+    <script src="_js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="_css/lightbox.css" media="screen" />
+</head>
+
+<body>
+    <!--The header contains the logo and the top-level navigation menu-->
+    <header>
+        <div class="logo-box">
+            <img class="logo" src="_images/port-la-yes_logo.png" alt="The Port la yes brand logo">
+        </div>
+        <div class="nav-box">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="shop.html">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--This section contains the main content and value of what the website is trying to sell or promote-->
+    <main>
+        <!--The business slogan-->
+        <h1 id="slogan">Confidence starts with you</h1>
+        <div class="home-content">
+            <div class="banner-section">
+                <picture>
+                    <source srcset="_images/port-la-yes_hero.jpg" media="(max-width: 768px)">
+                    <source srcset="_images/port-la-yes_hero.jpg" media="(max-width: 1024px)">
+                    <img id="banner" src="_images/port-la-yes_hero.jpg" alt="A woman expressing confidence and beauty">
+                </picture>
+            </div>
+            <!--The products that are being sold on the website-->
+            <div class="right-section">
+                <div class="listedproducts">
+                    <h2>Featured Products</h2>
+                    <div class="iterm1">
+                        <a href="_images/port-la-yes_lipstick.jpg" data-lightbox="products" title="Sexy Girl Lipstick by Port La Yes">
+                            <img src="_images/port-la-yes_lipstick.jpg" alt="Sexy Girl Lipstick by Port La Yes">
+                        </a>
+                        <h3>Sexy Girl Lipstick</h3>
+                        <p>R89,99</p>
+                    </div>
+                    <div class="iterm2">
+                        <a href="_images/port-la-yes_mistspray.jpg" data-lightbox="products" title="Refreshing Mist spray by Port La Yes"
+                            title="Refreshing Mist Spray">
+                            <img src="_images/port-la-yes_mistspray.jpg" alt="Refreshing Mist spray by Port La Yes">
+                        </a>
+                        <h3>Refreshing Mist Spray</h3>
+                        <p>R79,99</p>
+                    </div>
+                    <div class="iterm3">
+                        <a href="_images/port-la-yes_lipbalm.jpg" data-lightbox="products" title="Hydrating Lip Balm by Port La Yes">
+                            <img src="_images/port-la-yes_lipbalm.jpg" alt="Hydrating Lip Balm by Port La Yes">
+                        </a>
+                        <h3>Hydrating Lip Balm</h3>
+                        <p>R49,99</p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Port La Yes is a beauty and skincare brand dedicated to helping women feel confident and
+                        beautiful in their own skin. We offer a range of beauty products, including lipstick, hydrating
+                        lip balm, refreshing mist spray and hand lotion. Our aim is to encourage confidence through
+                        beauty while providing customers with quality products and helpful
+                        beauty advice. At Port La Yes, we believe that confidence starts with you!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!--The footer contains the copyright information and a link to the top of the page-->
+        <nav class="lownav-links">
+            <ul>
+                <li><a href="index.html">Back To Top</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write(" - Port La Yes | Last modified: ")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br>all rights reserved.
+        </p>
+    </footer>
+    <!--Welcome PoP up-->
+    <div class="the-modal">
+        <dialog class="modal" data-modal>
+            <button class="close" data-close-modal>X</button>
+            <div class="content">
+                <h1>Welcome to Port La Yes</h1>
+                <p>
+                    <span class="material-symbols-outlined" id="storeToggle" role="button" tabindex="0"
+                        aria-expanded="false">
+                        No products are being sold on this website. This is a virtual exhibit for educational purposes
+                        only.
+                    </span>
+                </p>
+            </div>
+            <div class="accordion-content" id="storeInfo">
+                <p>Do not get scamed please. Nothing is for sale. Please lock in!</p>
+            </div>
+        </dialog>
+
+    </div>
+    <!-- </div> -->
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            const modal = document.querySelector('[data-modal]');
+            const closeButtons = document.querySelectorAll('[data-close-modal]');
+            if (!sessionStorage.getItem('welcomeShown')) {
+                modal.showModal();
+                sessionStorage.setItem('welcomeShown', 'true');
+            }
+            closeButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    modal.close();
+                });
+            });
+        });
+
+        storeToggle.addEventListener("click", function () {
+            if (storeInfo.style.display === "block") {
+                storeInfo.style.display = "none";
+                storeToggle.setAttribute("aria-expanded", "false");
+            } else {
+                storeInfo.style.display = "block";
+                storeToggle.setAttribute("aria-expanded", "true");
+            }
+        });
+
+        storeToggle.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                storeToggle.click();
+            }
+        });
+
+    </script>
+</body>
+
+</html>

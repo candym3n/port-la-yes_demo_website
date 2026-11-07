@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Port La Yes</title>
+    <meta name="description" content="Explore Port La Yes beauty products, including lipstick, hydrating lip balm and refreshing mist spray. Discover products designed to inspire confidence and self-expression.">
+    <meta name="keywords" content="Port La Yes    Natural ingredients, Hydration, Beauty products, Lipstick, Mist spray, Hydrating lip balm, Beauty products in person">
+    <meta name="robots" content="index, follow">
+    <link href="_css/style.css" rel="stylesheet" type="text/css" />
+    <script src="_js/jquery-1.10.2.min.js"></script>
+    <script src="_js/lightbox-2.6.min.js"></script>
+    <script src="_js/modernizr.custom.js"></script>
+    <link href="_css/javascriptfile.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="_css/lightbox.css" media="screen" />
+</head>
+
+<body>
+    <!--The header contains the logo and the top-level navigation menu-->
+    <header>
+        <div class="logo-box">
+            <img class="logo" src="_images/port-la-yes_logo.png" alt="The Port la yes brand logo">
+        </div>
+        <div class="nav-box">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="shop.html"><strong>Products</strong></a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-content">
+            <!--The main content section, such as the product listings and descriptions-->
+            <h1>Shop For Products</h1>
+            <p>
+                <span class="highlight" id="storeToggle" role="button" tabindex="0" aria-expanded="false">
+                    Visit our physical store
+                </span>
+            </p>
+
+            <div class="accordion-content" id="storeInfo">
+                <p>Visit our store to explore our beauty products in person, receive personalized advice, and shop with confidence.</p>
+            </div>
+
+            <div class="box1">
+                <a href="_images/port-la-yes_lipstick.jpg" data-lightbox="products" title="Sexy Girl Lipstick by Port La Yes">
+                    <img src="_images/port-la-yes_lipstick.jpg" alt="Sexy Girl Lipstick by Port La Yes">
+                </a>
+                <h2>Sexy Girl Lipstick</h2>
+                <p>This lipstick is perfect for a night out or a special occasion. It will keep your lips looking
+                    fabulous all night long.</p>
+                <p><strong>R89,99</strong></p>
+            </div>
+
+            <div class="box2">
+                <a href="_images/port-la-yes_mistspray.jpg" data-lightbox="products" title="Refreshing Mist spray by Port La Yes">
+                    <img src="_images/port-la-yes_mistspray.jpg" alt="Refreshing Mist spray by Port La Yes">
+                </a>
+                <h2>Refreshing Mist Spray</h2>
+                <p>This refreshing mist spray is made from natural ingredients such as aloe vera and green tea,
+                    providing a soothing and hydrating experience.</p>
+                <p><strong>R79,99</strong></p>
+            </div>
+
+            <div class="box3">
+                <a href="_images/port-la-yes_lipbalm.jpg" data-lightbox="products" title="Hydrating Lip Balm by Port La Yes">
+                    <img src="_images/port-la-yes_lipbalm.jpg" alt="Hydrating Lip Balm by Port La Yes">
+                </a>
+                <h2>Hydrating Lip Balm</h2>
+                <p>Small hydrating lip balm is formulated with natural ingredients such as shea butter and vitamin E
+                    to
+                    provide moisture and protection for your lips.</p>
+                <p><strong>R49,99</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!--The footer contains the copyright information and a link to the top of the page-->
+        <nav class="lownav-links">
+            <ul>
+                <li><a href="shop.html">Back To Top</a></li>
+            </ul>
+        </nav>
+
+        <p class="copyright">
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write(" - Port La Yes | Last modified: ")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br>all rights reserved.
+        </p>
+    </footer>
+    <script>
+        var storeToggle = document.getElementById("storeToggle");
+        var storeInfo = document.getElementById("storeInfo");
+
+        storeToggle.addEventListener("click", function () {
+            if (storeInfo.style.display === "block") {
+                storeInfo.style.display = "none";
+                storeToggle.setAttribute("aria-expanded", "false");
+            } else {
+                storeInfo.style.display = "block";
+                storeToggle.setAttribute("aria-expanded", "true");
+            }
+        });
+
+        storeToggle.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                storeToggle.click();
+            }
+        });
+    </script>
+</body>
+
+</html>

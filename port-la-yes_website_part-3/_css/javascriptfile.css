@@ -1,0 +1,277 @@
+.accordion-content {
+    display: none;
+    background-color: #fff3fb;
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 4px solid hotpink;
+}
+
+/* welcome to port-la-yes PoP-up */
+.content{
+  text-align: center;
+}
+.content h1{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+
+}
+.modal {
+  z-index: 10;
+/*   padding: 0.5rem; */
+/*   top: 25%; */
+/*   left: 50%; */
+/*   translate: -50% -50%; */
+/*   width: 50%; */
+/*   height: 50%; */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Thank You Pop-up */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background: white;
+    padding: 50px;
+    width: 80%;
+    max-width: 550px;
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.popup-box h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.popup-box p {
+    font-size: 20px;
+}
+
+.popup-box button {
+    background: black;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.popup-box button:hover {
+    background: #fff3fb;
+    color: black;
+}
+
+/* Main enquiry form container */
+.form-box {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff3fb;
+    border: 1.2px solid #000000;
+    border-radius: 12px;
+    font-family: arial;
+    font-size: 14px;
+}
+
+/* Form heading */
+.form-box h2 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Submit button */
+.form-box input[type="submit"],
+.form-box input[type="reset"] {
+    background-color: #000000;
+    color: #fff;
+    padding: 13px 35px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Submit button hover effect */
+.form-box input[type="submit"]:hover {
+    background-color: #fff3fb;
+    color: #000;
+    border-color: #e6a6ce;
+}
+
+/* Text fields and dropdowns */
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="tel"],
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Input focus effect */
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    outline: none;
+    border: 2px solid #e6a6ce;
+    background-color: #fff3fb;
+}
+
+/* Message box */
+.form-box textarea {
+    resize: vertical;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .form-box {
+        width: 95%;
+        max-width: 100%;
+        margin: 15px auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .form-box tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-box td {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .form-box input[type="text"],
+    .form-box input[type="email"],
+    .form-box input[type="tel"],
+    .form-box select,
+    .form-box textarea {
+        width: 90%;
+        padding: 9px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .form-box input[type="submit"],
+    .form-box input[type="reset"] {
+        padding: 12px;
+        font-size: 15px;
+
+    }
+
+    .form-box input[type="checkbox"], .form-box input[type="radio"] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .form-box label {
+        font-size: 16.4px;
+    }
+
+    .form-box input[type="text"], .form-box input[type="email"], .form-box input[type="tel"], .form-box select, .form-box textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #000000;
+        border-radius: 6px;
+        background-color: #fff;
+        font-family: Arial;
+        font-size: 13.2px;
+        box-sizing: border-box;
+    }
+
+    .popup-box, .the-modal {
+        width: 70%;
+        max-width: 260px;
+        padding: 12px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    .popup-box h1 {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+
+    .popup-box p {
+        font-size: 12px;
+        margin: 6px 0;
+    }
+
+    .popup-box button {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+}
+
+/* Tablet pop-up responsiveness */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .popup-box {
+        width: 70%;
+        max-width: 450px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .popup-box h1 {
+        font-size: 28px;
+    }
+
+    .popup-box p {
+        font-size: 16px;
+    }
+
+    .popup-box button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+

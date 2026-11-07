@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Tips | Port La Yes</title>
+    <meta name="description" content="Explore the Port La Yes enqurity page,  and feel free to enquire about the beauty brand.">
+    <meta name="keywords" content="Product infomation,     Call, need help, help, enquiry Port La Yes, Beauty enquiries, Beauty and skincare, Port La Yes contact details, Beauty brand information, advice">
+    <meta name="robots" content="index, follow">
+    <link href="_css/style.css" rel="stylesheet" type="text/css" />
+    <link href="_css/javascriptfile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--The header contains the logo and the top-level navigation menu-->
+    <header>
+        <div class="logo-box">
+            <img class="logo" src="_images/port-la-yes_logo.png" alt="The Port la yes brand logo">
+        </div>
+        <div class="nav-box">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="shop.html">Products</a></li>
+                    <li><a href="enquiry.html"><strong>Enquiry</strong></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="beauty-content">
+            <!--The main content section, such as the beauty tips and advice-->
+            <h1>Beauty Tips</h1>
+            <div class="tips-box">
+                <h3>Beauty Tips#1: Hydrate Those Lips</h3>
+                <p>"Listen, if your lips are looking like they ve been though war, it is time to moisturize! It is time
+                    to use lip balm. Keep one in your pocket, bag or next to your bed. Dry lips are not the name of the
+                    Swag!"</p>
+                <h3>Beauty Tips#2: The Importance of a Good Skincare Routine</h3>
+                <p>"Always remember to remove your makeup before going to bed. This allows your skin to breathe and
+                    prevents clogged pores."</p>
+                <h3>Beauty Tips#3: Smell Good, Feel Good!</h3>
+                <p>"A few sprays of body mist can help keep you feeling fresh and confident throughout the day."</p>
+            </div>
+            <div class="tips-box2">
+                <p>
+                    <span class="highlight" id="storeToggle" role="button" tabindex="0" aria-expanded="false">
+                        NEVER BECOME A VICTIM OF YOUR OWN INSECURITY!
+                    </span>
+                </p>
+
+                <div class="accordion-content" id="storeInfo">
+                    <p>You are perfect! Chirst made you perfect.</p>
+                </div>
+                <!--An embedded Youtube video, that talks about body dismorphia-->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Y4RriAr2AuU" title="Beauty and Body Image Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <!--Google Form for Customer Enquiries and Feedback-->
+                <h2>Customer Enquiries</h2>
+                <p>If you have any questions or feedback, let us know gurl!</p>
+            </div>
+            <div class="form-box">
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSftTgsjRjlYe4ZT8gVbgt3PjW4VKgnrAeCeoSb7sdXV3_3BXw/formResponse"
+                    method="POST" target="EnquiryForm" onsubmit="return validateForm()" novalidate>
+                    <table>
+                        <tr>
+                            <td><label for="MyFullname">Fullname:</label></td>
+                            <td><input type="text" id="MyFullname" name="entry.1342853076" placeholder="Your Full Name"
+                                    required><small id="nameError"></small></td>
+                        </tr>
+                        <tr>
+                            <td><label for="MyEmail">Email:</label></td>
+                            <td><input type="email" id="MyEmail" name="entry.2108728414"
+                                    placeholder="your.email@example.com" required><small id="emailError"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="MyPhone">Phone:</label></td>
+                            <td><input type="tel" id="MyPhone" name="entry.618920796" placeholder="012 345 6789"
+                                    required><small id="phoneError"></small></td>
+                        </tr>
+                        <tr>
+                            <td><label>Which product are you interested in?</label></td>
+                            <td>
+                                <input type="checkbox" id="LipSt" name="entry.1850200001" value="Lipstick">Lipstick<br>
+                                <input type="checkbox" id="MistSpray" name="entry.1850200001" value="Mist spray">
+                                spray<br>
+                                <input type="checkbox" id="LipBalm" name="entry.1850200001" value="Lip balm">Lip
+                                balm<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="TheReason">What is the reason for your enquiry?</label></td>
+                            <td>
+                                <input type="radio" id="TheReason" name="entry.428204397" value="Product Information"
+                                    required>Product Information<br>
+                                <input type="radio" id="TheReason" name="entry.428204397"
+                                    value="Product Availability">Product Availability<br>
+                                <input type="radio" id="TheReason" name="entry.428204397"
+                                    value="Product Pricing">Product Pricing<br>
+                                <input type="radio" id="TheReason" name="entry.428204397" value="Other">Other<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="MySource">Where have you heard about us?</label></td>
+                            <td>
+                                <select id="MySource" name="entry.1660921458" required>
+                                    <option value="" disabled selected>Choose an option</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Friend/Family">Friend/Family</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <small id="sourceError"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="MyMessage">Your message</label></td>
+                            <td>
+                                <textarea id="MyMessage" name="entry.1440519606" rows="4"
+                                    placeholder="type/write your message here..." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="reset" value="Reset">
+                                <!--A JavaScript function that validates the form inputs before submission."When the button is clicked, it will check if all required fields are filled properly." -->
+                                <input type="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <!--A form that submits data to a Google Form for customer enquiries and feedback-->
+            <iframe name="EnquiryForm" id="EnquiryForm" style="display:none;"></iframe>
+        </div>
+
+        <!--Thank you message, pop up after the form is submitted successfully-->
+        <!-- Thank You Pop-up -->
+        <div id="thankYouPopup" class="popup-overlay">
+            <div class="popup-box">
+                <h1>THANK YOU!</h1>
+                <p>Your enquiry has been submitted successfully.</p>
+                <p>We appreciate you choosing Port' La Yes!</p>
+                <button type="button" id="closePopup">Whatever!</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <!--The footer contains the copyright information and a link to the top of the page-->
+        <nav class="lownav-links">
+            <ul>
+                <li><a href="enquiry.html">Back To Top</a></li>
+            </ul>
+        </nav>
+
+        <p class="copyright">
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write(" - Port La Yes | Last modified: ")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br>all rights reserved.
+        </p>
+    </footer>
+    <script>
+        var formSubmitted = false;
+
+        // Function to display an error message
+        function displayError(errorId, message) {
+            document.getElementById(errorId).textContent = message;
+        }
+
+        // Function to clear an error message
+        function clearError(errorId) {
+            document.getElementById(errorId).textContent = "";
+        }
+
+        // Function to validate the enquiry form
+        function validateForm() {
+            var valid = true;
+
+            // Validate full name
+            var name = document.getElementById("MyFullname").value.trim();
+            var namePattern = /^[a-zA-Z\s]+$/;
+
+            if (name === "" || name.length < 5 || name.length > 41) {
+                displayError("nameError", "Please enter your full name (5–41 characters).");
+                valid = false;
+            } else if (!namePattern.test(name)) {
+                displayError("nameError", "Please use letters and spaces only.");
+                valid = false;
+            } else {
+                clearError("nameError");
+            }
+
+            // Validate email
+            var email = document.getElementById("MyEmail").value.trim();
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email === "" || !emailPattern.test(email)) {
+                displayError("emailError", "Please enter a valid email address.");
+                valid = false;
+            } else {
+                clearError("emailError");
+            }
+
+            // Validate phone number
+            var phone = document.getElementById("MyPhone").value.trim();
+            var phonePattern = /^\d{3} \d{3} \d{4}$/;
+
+            if (!phonePattern.test(phone)) {
+                displayError("phoneError", "Use this format: 012 345 6789.");
+                valid = false;
+            } else {
+                clearError("phoneError");
+            }
+
+            // Validate reason for enquiry
+            var reason = document.querySelector('input[name="entry.428204397"]:checked');
+
+            if (!reason) {
+                alert("Please select a reason for your enquiry.");
+                valid = false;
+            }
+
+            // Validate message
+            var message = document.getElementById("MyMessage").value.trim();
+
+            if (message === "" || message.length < 10 || message.length > 401 ||
+                !/^[a-zA-Z0-9\s.,!?'"-]+$/.test(message)) {
+                alert("Please enter a message between 10 and 401 characters.\n\nUse letters, numbers, and basic punctuation only.");
+                valid = false;
+            }
+
+            // Validate source
+            var source = document.getElementById("MySource").value;
+
+            if (source === "") {
+                displayError("sourceError", "Please select where you heard about us.");
+                valid = false;
+            } else {
+                clearError("sourceError");
+            }
+
+            if (valid) {
+                formSubmitted = true;
+            }
+
+            return valid;
+        }
+
+        document.getElementById("EnquiryForm").addEventListener("load", function () {
+            if (formSubmitted) {
+                // Clear the form after submission
+                document.querySelector("form").reset();
+
+                // Clear any remaining validation messages
+                clearError("nameError");
+                clearError("emailError");
+                clearError("phoneError");
+                clearError("sourceError");
+
+                // Show the Thank You pop-up
+                document.getElementById("thankYouPopup").style.display = "flex";
+
+                formSubmitted = false;
+            }
+        });
+
+        // Close the Thank You pop-up
+        document.getElementById("closePopup").addEventListener("click", function () {
+            document.getElementById("thankYouPopup").style.display = "none";
+        });
+
+        var storeToggle = document.getElementById("storeToggle");
+        var storeInfo = document.getElementById("storeInfo");
+
+        storeToggle.addEventListener("click", function () {
+            if (storeInfo.style.display === "block") {
+                storeInfo.style.display = "none";
+                storeToggle.setAttribute("aria-expanded", "false");
+            } else {
+                storeInfo.style.display = "block";
+                storeToggle.setAttribute("aria-expanded", "true");
+            }
+        });
+
+        storeToggle.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                storeToggle.click();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
